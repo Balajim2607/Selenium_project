@@ -14,7 +14,15 @@ public class Search_result_page extends BasePage {
 	@FindBy(xpath =  "//h1[normalize-space()='Search - iMac']")  
 	WebElement searchrs;
 	
+	@FindBy(xpath =  "//img[@title='iMac']")  
+	WebElement imacclick;
+	
+	
 	public String searchrs() {
 		return searchrs.getText();
+	}
+	
+	public void imacclick(){
+		imacclick.click();
 	}
 }
